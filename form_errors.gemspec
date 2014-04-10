@@ -6,11 +6,11 @@ require 'form_errors/version'
 Gem::Specification.new do |spec|
   spec.name          = "form_errors"
   spec.version       = FormErrors::VERSION
-  spec.authors       = ["TODO: Write your name"]
+  spec.authors       = ["John Otander"]
   spec.email         = ["johnotander@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Clean up form error reporting in Rails with a nice little view helper.}
+  spec.description   = %q{Clean up form error reporting in Rails with a nice little view helper. <%= display_errors(@object) %>}
+  spec.homepage      = "https://github.com/johnotander/form_errors"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
