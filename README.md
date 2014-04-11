@@ -1,4 +1,4 @@
-# FormErrors
+# Form Errors
 
 Clean up form error reporting in Rails with a nice little view helper.
 
