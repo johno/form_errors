@@ -6,15 +6,21 @@ Clean up form error reporting in Rails with a nice little view helper.
 
 Add this line to your application's Gemfile:
 
-    gem 'form_errors'
+```ruby
+gem 'form_errors'
+```
 
 And then execute:
 
-    $ bundle
+```
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install form_errors
+```
+$ gem install form_errors
+```
 
 ## Usage
 
