@@ -23,8 +23,8 @@ module FormErrors
 
       def get_error_string(error_string, object)
         error_string || "#{ pluralize(object.errors.count, "error") } "\
-                        "prohibited this #{ object.class.name.underscore.humanize.downcase }"\
-                        " from being saved"
+                        "prohibited this #{ object.class.name.underscore.humanize.downcase } "\
+                        "from being saved"
       end
   end
 end
