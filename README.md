@@ -57,6 +57,14 @@ The helper applies the `alert`, `alert-danger`, and `alert-dismissable` classes 
 </div>
 ```
 
+The `h2` message defaults to:
+
+```ruby
+"#{ pluralize(object.errors.count, "error") } "\
+"prohibited this #{ object.class.name.underscore.humanize.downcase } "\
+"from being saved"
+```
+
 ## Contributing
 
 1. Fork it ( http://github.com/johnotander/form_errors/fork )
