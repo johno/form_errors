@@ -6,12 +6,12 @@ module FormErrors
       <<-HTML
         <div class="alert alert-danger alert-dismissable">
           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-          <h2 class="#{ html.error_string_class }">
+          <h2 class="#{ html[:error_string_class] }">
             #{ get_error_string(error_string, object) }
           </h2>
-          <ul class="#{ html.error_list_class }">
+          <ul class="#{ html[:error_list_class] }">
             #{ object.errors.full_messages.map do |msg|
-                 "<li class=\"#{ html.error_list_item_class }\">#{ msg }</li>"
+                 "<li class=\"#{ html[:error_list_item_class] }\">#{ msg }</li>"
                end.join }
           </ul>
         </div>

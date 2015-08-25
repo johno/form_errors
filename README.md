@@ -65,6 +65,12 @@ The `h2` message defaults to:
 "from being saved"
 ```
 
+You can also pass html classes to the different DOM elements with:
+
+```ruby
+display_errors(@object, 'Whoopsie', error_string_class: 'h4')
+```
+
 ## Contributing
 
 1. Fork it ( http://github.com/johnotander/form_errors/fork )
