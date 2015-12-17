@@ -23,7 +23,7 @@ module FormErrors
       return unless object && object.errors.any?
 
       <<-HTML
-        <div class="bold p2 white bg-red">
+        <div class="bold p2 white bg-red mb1">
           <h2 class="#{ html[:error_string_class] }">
             #{ get_error_string(error_string, object) }
           </h2>
